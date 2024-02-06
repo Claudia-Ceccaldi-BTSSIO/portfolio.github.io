@@ -1,0 +1,83 @@
+/* Style global */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header a {
+    text-decoration: none;
+    color: #333;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.header a:hover {
+    color: #007bff;
+}
+
+.logo-profil,
+.logo-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-profil,
+.img-ufa {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.w3-container {
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.w3-text-black {
+    color: #333 !important;
+}
+
+.ufa47-content,
+.coordonnee {
+    background-color: #fff;
+    margin: 20px 5%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.coordonnee strong,
+.coordonnee em,
+.coordonnee a {
+    display: block;
+    /* Assure que chaque élément commence sur une nouvelle ligne */
+    margin: 10px 0;
+}
+
+.coordonnee a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.coordonnee a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}

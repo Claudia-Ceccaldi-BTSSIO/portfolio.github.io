@@ -1,0 +1,187 @@
+/* Style général de la page */
+body {
+  background-color: #ffffff; /* Blanc */
+  color: #000000; /* Noir */
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu en haut */
+.header {
+  background-color: #fff; /* Bleu foncé */
+  color: #333; /* Blanc */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  
+}
+
+.header a {
+  text-decoration: none;
+}
+
+/* Conteneur principal */
+.content {
+  text-align: center;
+  padding: 20px;
+  margin-top: 70px;
+}
+
+/* Style de la section "Qui suis-je ?" */
+.content h1 {
+  text-align: center;
+}
+
+/* Style de la section "Description BTS SIO option SLAM" */
+.sio {
+  background-color: #ffffff; /* Blanc */
+  color: #000000; /* Noir */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style de la section "Etablissement UFA47" */
+.w3-text-black {
+  font-size: medium;
+  text-align: center;
+  color: #000033; /* Bleu foncé */
+}
+
+/* Style de la section "Etablissement UFA47" - Contenu ombre */
+.ufa47-content {
+  background-color: #ffffff; /* Blanc */
+  color: #000000; /* Noir */
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style de la section "Contactez moi" */
+.Contact {
+  background-color: #000033; /* Bleu foncé */
+  color: #ffffff; /* Blanc */
+  text-align: center;
+  padding: 20px;
+  margin-top: 250px; /* Ajoutez une marge supérieure pour éviter la superposition */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style de la section "Coordonnées" */
+.coordonnee {
+  background-color: #ffffff; /* Blanc */
+  color: #000000; /* Noir */
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Pied de page */
+.footer {
+  height: 100px;
+}
+
+.logo-image {
+  text-align: center;
+}
+.img-ufa {
+  height: 15vh;
+}
+.logo-profil {
+  text-align: center;
+}
+.img-profil {
+  height: 15vh;
+  border-radius: 50%;
+}
+
+.feedlylogo {
+  align-items: center;
+}
+
+/* Styles spécifiques pour la page de parcours */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333; /* Gris foncé */
+  color: #ffffff; /* Blanc */
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #444; /* Gris */
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff; /* Blanc */
+}
+
+.parcours-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; /* Blanc */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fleche {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 60px solid #000033; /* Bleu foncé */
+  position: relative;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.event {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #cccccc; /* Gris clair */
+  background-color: #f2f2f2; /* Gris très clair */
+}
+
+.cv-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cv-link a {
+  text-decoration: none;
+  color: #3498db; /* Bleu */
+  font-weight: bold;
+}
+
+.cv-link a:hover {
+  text-decoration: underline;
+}
