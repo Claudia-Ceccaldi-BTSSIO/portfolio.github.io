@@ -4,17 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Parcours Professionnel</title>
-    <link rel="stylesheet" href="../../assets/css/styleparcours.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
+<style>/* Styles spécifiques pour la page de parcours */
+.mabarre {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mabarre a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.mabarre a:hover {
+    background-color: #f0f0f0; /* Couleur de fond au survol */
+}
+
+/* Menu en haut */
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #333;
+    /* Blanc */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header a {
+    text-decoration: none;
+}
+.header a:hover {
+    color: #007bff;
+    /* Bleu pour le survol des liens */
+}
+nav ul {
+    list-style-type: none;
+    background-color: #fff;
+    text-align: center;
+    color: #333;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+    color: #333;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    /* Blanc */
+}
+nav {
+    color: #333;
+    background-color: #fff;
+    display: block;
+}
+
+.parcours-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    /* Blanc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fleche {
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 60px solid #000033;
+    /* Bleu foncé */
+    position: relative;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.event {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    /* Gris clair */
+    background-color: #f2f2f2;
+    /* Gris très clair */
+}
+
+.cv-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cv-link a {
+    text-decoration: none;
+    color: #3498db;
+    /* Bleu */
+    font-weight: bold;
+}
+
+.cv-link a:hover {
+    text-decoration: underline;
+}
+/* Styles pour la barre de navigation */
+.navbar {
+    background-color: #ffffff; /* Couleur de fond blanche */
+    color: #000000; /* Couleur du texte en noir */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+    position: fixed; /* Barre de navigation fixe en haut */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Pour être au-dessus du contenu */
+}
+
+.navbar a {
+    text-decoration: none; /* Enlever la soulignement des liens */
+    color: #000000; /* Couleur du texte en noir */
+    margin: 0 20px; /* Espacement entre les liens */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Soulignement au survol des liens */
+}</style>
     <header>
       <h1>Mon Parcours Professionnel</h1>
-      <nav>
+      <nav class="mabarre">
+        <div class="header">
         <a href="../../index.html">Accueil</a>
-        <a href="../../src/views/projetIndex.html">Projets</a>
-        <a href="src/views/veille.html">Veille</a>
-        <a href="src/views/documents.html">Documents</a>
-        <a href="/index.html#contactez-moi">Contact</a>
+        <a href="../../src/views/projetIndex.html">Codes/Projets</a>
+        <a href="../../src/views/veille.html">Veille</a>
+        <a href="../../src/views/documents.html">Documents</a>
+        <a href="../../index.html#contactez-moi">Contact</a>
+    </div>
       </nav>
     </header>
 

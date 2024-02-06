@@ -1,187 +1,385 @@
-/* Style général de la page */
-body {
-  background-color: #ffffff; /* Blanc */
-  color: #000000; /* Noir */
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
+/* Styles généraux */
+             body {
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-image: url('../images/back.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                }
+ .header a {
+     color: #333;
+     /* Lien en gris foncé */
+ }
+
+ .header a:hover {
+     color: #007bff;
+     /* Bleu pour le survol des liens */
+ }
+
+ .w3-text-black {
+     color: #333;
+     /* Correction pour garantir la cohérence du texte */
+ }
+
+ /* Menu en haut */
+ .header {
+     background-color: #fff;
+     color: #333;
+     /* Blanc */
+     display: flex;
+    text-align: center;
+     justify-content: space-around;
+     align-items: center;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 1;
+    padding: 20px 0;
+ }
+
+ .header a {
+     text-decoration: none;
+ }
+/* Barre de navigation */
+nav {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
 }
 
-/* Menu en haut */
-.header {
-  background-color: #fff; /* Bleu foncé */
-  color: #333; /* Blanc */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+        background-color: #fff;
+        text-align: center;
+        color: #333;
+        padding: 10px 0;
 }
 
-.header a {
-  text-decoration: none;
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+    color: #333;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* Conteneur principal */
 .content {
-  text-align: center;
-  padding: 20px;
-  margin-top: 70px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 70px;
 }
 
-/* Style de la section "Qui suis-je ?" */
+/* Section "Qui suis-je ?" */
 .content h1 {
-  text-align: center;
+    text-align: center;
 }
 
-/* Style de la section "Description BTS SIO option SLAM" */
+/* Section "Description BTS SIO option SLAM" */
 .sio {
-  background-color: #ffffff; /* Blanc */
-  color: #000000; /* Noir */
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Style de la section "Etablissement UFA47" */
+/* Section "Etablissement UFA47" */
 .w3-text-black {
-  font-size: medium;
-  text-align: center;
-  color: #000033; /* Bleu foncé */
+    font-size: medium;
+    text-align: center;
+    color: #333;
 }
 
-/* Style de la section "Etablissement UFA47" - Contenu ombre */
+/* Section "Etablissement UFA47" - Contenu ombre */
 .ufa47-content {
-  background-color: #ffffff; /* Blanc */
-  color: #000000; /* Noir */
-  text-align: center;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Style de la section "Contactez moi" */
+/* Section "Contactez moi" */
 .Contact {
-  background-color: #000033; /* Bleu foncé */
-  color: #ffffff; /* Blanc */
-  text-align: center;
-  padding: 20px;
-  margin-top: 250px; /* Ajoutez une marge supérieure pour éviter la superposition */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Style de la section "Coordonnées" */
+/* Section "Coordonnées" */
 .coordonnee {
-  background-color: #ffffff; /* Blanc */
-  color: #000000; /* Noir */
-  text-align: center;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Pied de page */
 .footer {
-  height: 100px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
 
-.logo-image {
-  text-align: center;
-}
-.img-ufa {
-  height: 15vh;
-}
+/* Autres styles */
+.logo-image,
 .logo-profil {
-  text-align: center;
-}
-.img-profil {
-  height: 15vh;
-  border-radius: 50%;
+    text-align: center;
 }
 
-.feedlylogo {
-  align-items: center;
+.img-ufa,
+.img-profil {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.w3-container {
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.star {
+    color: #f4d03f;
+    font-size: 18px;
 }
 
 /* Styles spécifiques pour la page de parcours */
-body {
-  font-family: Arial, sans-serif;
-}
-
-header {
-  background-color: #333; /* Gris foncé */
-  color: #ffffff; /* Blanc */
-  text-align: center;
-  padding: 20px 0;
-}
-
-nav ul {
-  list-style-type: none;
-  background-color: #444; /* Gris */
-  text-align: center;
-  padding: 10px 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #ffffff; /* Blanc */
-}
-
-.parcours-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ffffff; /* Blanc */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .fleche {
-  width: 0;
-  height: 0;
-  border-top: 40px solid transparent;
-  border-bottom: 40px solid transparent;
-  border-left: 60px solid #000033; /* Bleu foncé */
-  position: relative;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 60px solid #000033;
+    position: relative;
 }
 
 .timeline {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .event {
-  flex: 1;
-  text-align: center;
-  padding: 20px;
-  border: 1px solid #cccccc; /* Gris clair */
-  background-color: #f2f2f2; /* Gris très clair */
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    background-color: #f2f2f2;
 }
 
 .cv-link {
-  text-align: center;
-  margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .cv-link a {
-  text-decoration: none;
-  color: #3498db; /* Bleu */
-  font-weight: bold;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
 }
 
 .cv-link a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+/* Styles spécifiques pour la page des documents */
+.documents-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.documents-list {
+    list-style: none;
+    padding: 0;
+}
+
+.document-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.document-item:before {
+    content: "►";
+    margin-right: 10px;
+    color: #000;
+    font-size: 14px;
+}
+
+.document-link {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.document-link:hover {
+    text-decoration: underline;
+}
+
+/* Styles spécifiques pour la page des projets */
+.project-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #e9ecef;
+    border-left: 5px solid #0056b3;
+    transform: translateX(5px);
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.project-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Styles spécifiques pour la page de veille */
+.main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.star {
+    color: #f4d03f;
+    font-size: 18px;
+}
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Styles pour le carousel d'articles */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center;
+}
+
+.article {
+    flex: 0 0 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.article.active {
+    display: block;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    z-index: 2;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+/* Styles spécifiques pour le logo Feedly */
+.feedlylogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.feedlylogo img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Ajoutez vos styles personnalisés ci-dessous */
+.parcours-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    /* Blanc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

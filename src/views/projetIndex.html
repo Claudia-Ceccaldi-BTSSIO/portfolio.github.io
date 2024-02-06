@@ -5,114 +5,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets</title>
-    <link rel="stylesheet" href="/assets/css/style_projet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body>
-<style>/* Réinitialisation de base pour certains éléments */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+<style>
+    /* Styles pour la barre de navigation */
+.mabarre {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-body {
-    background-color: #f4f4f4;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    line-height: 1.6;
-    padding-bottom: 40px;
+.mabarre a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
 }
 
-header {
+.mabarre a:hover {
+    background-color: #f0f0f0; /* Couleur de fond au survol */
+}
+
+
+/* Menu en haut */
+.header {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #333;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav div.header {
+    /* Blanc */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
-nav a {
+.header a {
     text-decoration: none;
+}
+    .content {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .project-link {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-left: 5px solid #007bff;
+        transition: all 0.3s ease;
+    }
+
+    .project-link:hover {
+        background-color: #e9ecef;
+        border-left: 5px solid #0056b3;
+        transform: translateX(5px);
+    }
+
+    .project-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .project-text {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: #fff;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer p {
+        color: #666;
+    }
+
+.header {
+    background-color: #fff;
     color: #333;
-    font-weight: 500;
+    /* Blanc */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
-nav a:hover {
+.header a {
+    text-decoration: none;
+}
+.header a:hover {
     color: #007bff;
+    /* Bleu pour le survol des liens */
 }
+</style>
 
-.content {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.project-link {
-    text-decoration: none;
-    color: #333;
-    display: block;
-    width: 100%;
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-left: 5px solid #007bff;
-    transition: all 0.3s ease;
-}
-
-.project-link:hover {
-    background-color: #e9ecef;
-    border-left: 5px solid #0056b3;
-    transform: translateX(5px);
-}
-
-.project-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-.project-text {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    background-color: #fff;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    color: #666;
-}</style>
     <header>
-        <h1>Projets développement web</h1>
-        <nav>
+        <nav class="mabarre">
             <div class="header">
-                <a href="/index.html">Accueil</a>
+                <a href="../../index.html">Accueil</a>
                 <a href="../views/parcours.html">Parcours</a>
                 <a href="../views/veille.html">Veille</a>
                 <a href="../views/documents.html">Documents</a>
-                <a href="/index.html#contactez-moi">Contact</a>
+                <a href="../../index.html#contactez-moi">Contact</a>
             </div>
         </nav>
     </header>
