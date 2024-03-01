@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,103 +8,108 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
+
 <body>
-<style>
-    /* Styles pour la barre de navigation */
-.mabarre {
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
+    <style>
+        /* Styles pour la barre de navigation */
+        .mabarre {
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
 
-.mabarre a {
-    color: black;
-    text-decoration: none;
-    padding: 10px 20px;
-}
+        .mabarre a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
 
-.mabarre a:hover {
-    background-color: #f0f0f0; /* Couleur de fond au survol */
-}
-/* Menu en haut */
-.header {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
-    color: #333;
-    /* Blanc */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
+        .mabarre a:hover {
+            background-color: #f0f0f0;
+            /* Couleur de fond au survol */
+        }
 
-.header a {
-    text-decoration: none;
-}
-    .documents-container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+        /* Menu en haut */
+        .header {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff;
+            color: #333;
+            /* Blanc */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
 
-    .documents-list {
-        list-style: none;
-        padding: 0;
-    }
+        .header a {
+            text-decoration: none;
+        }
 
-    .document-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-    }
+        .documents-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    .document-item:before {
-        content: "►";
-        /* Mini flèche à gauche de chaque lien */
-        margin-right: 10px;
-        color: #000;
-        /* Couleur de la flèche noire */
-        font-size: 14px;
-    }
+        .documents-list {
+            list-style: none;
+            padding: 0;
+        }
 
-    .document-link {
-        text-decoration: none;
-        color: #3498db;
-        font-weight: bold;
-    }
+        .document-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
 
-    .document-link:hover {
-        text-decoration: underline;
-    }
-.header {
-    background-color: #fff;
-    color: #333;
-    /* Blanc */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
+        /* Supprimer la flèche avant le lien */
+        .document-item:before {
+            content: none;
+        }
 
-.header a {
-    text-decoration: none;
-}
-.header a:hover {
-    color: #007bff;
-    /* Bleu pour le survol des liens */
-}
-</style>
+        .document-link {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .document-link:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            background-color: #fff;
+            color: #333;
+            /* Blanc */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .header a {
+            text-decoration: none;
+        }
+
+        .header a:hover {
+            color: #007bff;
+            /* Bleu pour le survol des liens */
+        }
+        .bb {
+            text-align: center;
+        }
+    </style>
 
     <header>
         <nav class="mabarre">
@@ -113,30 +119,36 @@
                 <a href="../../src/views/projetIndex.html">Codes/Projets</a>
                 <a href="../../src/views/veille.html">Veille</a>
                 <a href="../../index.html#contactez-moi">Contact</a>
-              </div>
+            </div>
         </nav>
     </header>
     <div class="documents-container">
         <h2>DOCUMENTS</h2>
         <ul class="documents-list">
-                <strong>BLOC de Compétences</strong>
-                <br>
-                <br>
-                <li class="document-item"><span class="document-link"><a href="comp.html#comp1">Gérer le patrimoine informatique</a></span></li></li>
-                <li class="document-item"><span class="document-link"><a href="comp.html#comp2">Répondre aux incidents et aux demandes d'assistance et d'évolution</a></span></li></li>
-                <li class="document-item"><span class="document-link"><a href="comp.html#comp3">Développer la présence en ligne de l'organisation</a></span></li></li>
-                <li class="document-item"><span class="document-link"><a href="comp.html#comp4">Travailler en mode projet</a></span></li></li>
-                <li class="document-item"><span class="document-link"><a href="comp.html#comp5">Mettre à disposition des utilisateurs un service informatique</a></span></li></li>
-                <li class="document-item"><span class="document-link"><a href="comp.html#comp6">Organiser son développement professionnel</a></span></li></li>
-                <br>
-                <strong>Autres</strong>
-                <br>
-                <br>
-            <li class="document-item"><span class="document-link"><a href="../../assets/images/certiffcc.png">Certification FreeCodeCamp</a></span></li>
-            <li class="document-item"><span class="document-link"><a href="../../assets/docs/E4.pdf">Fiche E4</a></span></li>
-            <li class="document-item"><span class="document-link"><a href="../../assets/docs/ficheE5.pdf">Fiche E5</a></span></li>
-            <li class="document-item"><span class="document-link"><a href="../../assets/docs/grilleE5.pdf">Grille E5</a></span></li>
+    
+            <br>
+            <li class="document-item">
+                <span class="document-link">
+                    <img src="../../assets/images/bloc1.png" alt="bloc 1 comp" width="800" height="200">
+                    <br>
+                    <br>
+                    <a href="comp.html#comp1">
+                        <span class="document-link"><a href="comp.html#comp1">Comment ces compétences ont été acquises
+                                ...</a></span>
+            </li>
+            </a>
+            </span>
+            </li>
+            <br>
+            <li class="document-item"><span class="document-link"><a
+                        href="../../assets/images/certiffcc.png">Certification FreeCodeCamp</a></span></li>
+            <li class="document-item"><span class="document-link"><a href="../../assets/docs/E4.pdf">Fiche E4</a></span>
+            </li>
+            <li class="document-item"><span class="document-link"><a href="../../assets/docs/ficheE5.pdf">Fiche
+                        E5</a></span></li>
+          
         </ul>
     </div>
 </body>
+
 </html>
