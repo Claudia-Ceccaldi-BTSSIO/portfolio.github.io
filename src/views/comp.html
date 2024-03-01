@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            
+
         }
 
         .header {
@@ -60,9 +61,11 @@
         }
 
         h2 {
-            font-size: 24px;
-            margin-top: 20px;
-        }
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center; /* Centrer le texte */
+}
+
 
         ul {
             list-style-type: none;
@@ -127,6 +130,41 @@
             color: #ccc;
             font-size: 20px;
         }
+
+        /* Nouveau CSS pour aligner les images à gauche */
+        .competence,
+        .bloc {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .image {
+            width: 40%;
+        }
+
+        .text {
+            width: 50%;
+            padding: 0 20px;
+        }
+        .phrase {
+            font-size: 10px; /* ajustez la taille selon vos besoins */
+        }
+
+        @media (max-width: 768px) {
+
+            .competence,
+            .bloc {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .image,
+            .text {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -147,60 +185,85 @@
         <section class="section">
             <div class="container">
                 <div class="competence">
-                    <h2>Compétences acquises lors du projet "Application CAF 47"</h2>
-                    <img class="image" src="../../assets/images/appcaf.png" alt="Application CAF 47">
-                    <p>Recenser et identifier les ressources numériques</p>
-                    <p>Exploiter des référentiels, normes et standards adoptés par le
-                        prestataire informatique</p>
-                    <p>Traiter des demandes concernant les services réseau et système,
-                        applicatifs</p>
-                    <p>Participer à l’évolution d’un site Web exploitant les données de
-                        l’organisation</p>
-                    <p>Planifier les activités</p>
-                    <p>Évaluer les indicateurs de suivi d’un projet et analyser les écarts</p>
-                    <p>Réaliser les tests d’intégration et d’acceptation d’un service</p>
-                    <p>Déployer un service</p>
-                    <a href="../../assets/docs/projetCaf47.pdf">En savoir plus sur le projet</a>
+                    <img class="image" src="../../assets/images/appcaf2.png" alt="Application CAF 47">
+                    <div class="text">
+                        <h2>Compétences acquises lors du projet "Application CAF 47"</h2>
+                        <p>Recenser et identifier les ressources numériques</p>
+                        <p>Exploiter des référentiels, normes et standards adoptés par le
+                            prestataire informatique</p>
+                        <p>Traiter des demandes concernant les services réseau et système,
+                            applicatifs</p>
+                        <p>Participer à l’évolution d’un site Web exploitant les données de
+                            l’organisation</p>
+                        <p>Planifier les activités</p>
+                        <p>Évaluer les indicateurs de suivi d’un projet et analyser les écarts</p>
+                        <p>Réaliser les tests d’intégration et d’acceptation d’un service</p>
+                        <p>Déployer un service</p>
+                        <a href="../../assets/docs/projetCaf47.pdf">En savoir plus sur le projet</a>
+                    </div>
                 </div>
-                <div class="bloc">
-                    <h2>Blocs</h2>
-                    <p><span class="etoile">★</span><span class="etoile">★</span><span
-                            class="etoile-grise">✩</span><span class="etoile-grise">✩</span> Gérer le patrimoine
-                        informatique</p>
-                    <p><span class="etoile">★</span><span class="etoile-grise">✩</span><span
-                            class="etoile-grise">✩</span><span class="etoile-grise">✩</span> Répondre aux incidents et
-                        aux demandes d'assistance et
-                        d'évolution</p>
-                    <p><span class="etoile">★</span><span class="etoile-grise">✩</span><span
-                            class="etoile-grise">✩</span><span class="etoile-grise">✩</span> Développer la présence en
-                        ligne de l'organisation</p>
-                    <p><span class="etoile">★</span><span class="etoile">★</span><span class="etoile">★</span><span
-                            class="etoile-grise">✩</span> Travailler en mode projet</p>
-                    <p><span class="etoile">★</span><span class="etoile-grise">✩</span><span
-                            class="etoile-grise">✩</span><span class="etoile-grise">✩</span> Mettre à disposition des
-                        utilisateurs un service informatique</p>
-
-                </div>
+            <div class="bloc">
+                <p class="phrase">
+                    <span class="etoile">★</span><span class="etoile">★</span><span class="etoile-grise">✩</span><span
+                        class="etoile-grise">✩</span><br><br> Gérer le patrimoine informatique
+                </p>
+                <br>
+                <p class="phrase">
+                    <span class="etoile">★</span><span class="etoile-grise">✩</span><span class="etoile-grise">✩</span><br><br> Répondre aux
+                    incidents et aux demandes d'assistance et d'évolution <br>
+                </p>
+                <br>
+                <p class="phrase">
+                    <span class="etoile">★</span><span class="etoile-grise">✩</span><span class="etoile-grise">✩</span><br><br> Développer
+                    la présence en ligne de l'organisation
+                </p>
+                <br>
+                <p class="phrase">
+                    <span class="etoile">★</span><span class="etoile">★</span><span class="etoile">★</span><span
+                        class="etoile-grise">✩</span><br><br> Travailler en mode projet
+                </p>
+                <br>
+                <p class="phrase">
+                    <span class="etoile">★</span><span class="etoile">★</span><span class="etoile-grise">✩</span><br><br> Mettre à
+                    disposition des utilisateurs un service informatique
+                </p>
             </div>
-        </section>
+<section class="section">
+    <div class="container">
+        <div class="competence">
+            <img class="" src="../../assets/images/travailComp.png" width="700" height="300">
+                <a href="../../assets/docs/doccomp1.pdf">En savoir plus ...</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="competence">
+            <img class="" src="../../assets/images/travailComp2.png" width="700" height="300">
+            <a href="../../assets/docs/doccomp2.pdf">En savoir plus ...</a>
+        </div>
+    </div>
+    </div>
+</section>
         <section class="section">
             <div class="container">
                 <div class="competence">
-                    <h2>Compétences acquises lors de la mise en place de "l'outil Feedly"</h2>
                     <img class="image" src="../../assets/images/feedlylogo.jpg" alt="feedly">
-                    <p>Mettre en place son environnement d’apprentissage personnel</p>
-                    <p>Mettre en œuvre des outils et stratégies de veille informationnelle</p>
-                    <a href="../../assets/docs/">En savoir plus sur l'outil et sa mise en place</a>
+                    <div class="text">
+                        <h2>Compétences acquises lors de la mise en place de "l'outil Feedly"</h2>
+                        <p>Mettre en place son environnement d’apprentissage personnel</p>
+                        <p>Mettre en œuvre des outils et stratégies de veille informationnelle</p>
+                        <a href="../../assets/docs/">En savoir plus sur l'outil et sa mise en place</a>
+                    </div>
                 </div>
                 <div class="bloc">
-                    <h2>Blocs</h2>
-                    <p><span class="etoile">★</span><span class="etoile">★</span><span
-                            class="etoile-grise">✩</span><span class="etoile-grise">✩</span>Organiser son développement
+                    <p class="phrase"><span class="etoile">★</span><span class="etoile">★</span><span class="etoile-grise">✩</span><span class="etoile-grise">✩</span>Organiser son développement
                         professionnel</p>
                 </div>
             </div>
         </section>
-
     </main>
 </body>
 
