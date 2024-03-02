@@ -12,7 +12,6 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-
         }
 
         .header {
@@ -34,6 +33,8 @@
 
         .header a {
             text-decoration: none;
+            margin: 0 20px;
+            width: 100px; /* Largeur des liens dans la barre de navigation */
         }
 
         .mabarre {
@@ -46,12 +47,6 @@
             padding: 10px 20px;
         }
 
-        .header a {
-            color: #333;
-            text-decoration: none;
-            margin: 0 20px;
-        }
-
         main {
             max-width: 800px;
             margin: 20px auto;
@@ -61,11 +56,10 @@
         }
 
         h2 {
-    font-size: 24px;
-    margin-top: 20px;
-    text-align: center; /* Centrer le texte */
-}
-
+            font-size: 24px;
+            margin-top: 20px;
+            text-align: center; /* Centrer le texte */
+        }
 
         ul {
             list-style-type: none;
@@ -101,7 +95,6 @@
         .bloc {
             width: 100%;
             padding: 20px;
-            background-color: #82c1f4;
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
@@ -116,9 +109,18 @@
         }
 
         .image {
-            width: 100%;
+            width: 40%;
             border-radius: 8px;
             margin-bottom: 20px;
+        }
+
+        .text {
+            width: 50%;
+            padding: 0 20px;
+        }
+
+        .phrase {
+            font-size: 10px; /* ajustez la taille selon vos besoins */
         }
 
         .etoile {
@@ -131,29 +133,7 @@
             font-size: 20px;
         }
 
-        /* Nouveau CSS pour aligner les images à gauche */
-        .competence,
-        .bloc {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .image {
-            width: 40%;
-        }
-
-        .text {
-            width: 50%;
-            padding: 0 20px;
-        }
-        .phrase {
-            font-size: 10px; /* ajustez la taille selon vos besoins */
-        }
-
         @media (max-width: 768px) {
-
             .competence,
             .bloc {
                 flex-direction: column;
@@ -172,8 +152,8 @@
     <header>
         <nav class="mabarre">
             <div class="header">
-                <a href="../../index.html">Accueil</a>
-                <a href="../../src/views/parcours.html" width="300" height="200">Parcours</a>
+                <a href="../../index.html" style="width: 100px;">Accueil</a>
+                <a href="../../src/views/parcours.html" style="width: 200px;">Parcours</a>
                 <a href="../../src/views/projetIndex.html">Codes/Projets</a>
                 <a href="../../src/views/veille.html">Veille</a>
                 <a href="../../index.html#contactez-moi">Contact</a>
@@ -189,12 +169,9 @@
                     <div class="text">
                         <h2>Compétences acquises lors du projet "Application CAF 47"</h2>
                         <p>Recenser et identifier les ressources numériques</p>
-                        <p>Exploiter des référentiels, normes et standards adoptés par le
-                            prestataire informatique</p>
-                        <p>Traiter des demandes concernant les services réseau et système,
-                            applicatifs</p>
-                        <p>Participer à l’évolution d’un site Web exploitant les données de
-                            l’organisation</p>
+                        <p>Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</p>
+                        <p>Traiter des demandes concernant les services réseau et système, applicatifs</p>
+                        <p>Participer à l’évolution d’un site Web exploitant les données de l’organisation</p>
                         <p>Planifier les activités</p>
                         <p>Analyser les objectifs et les modalités d’organisation d’un projet</p>
                         <p>Évaluer les indicateurs de suivi d’un projet et analyser les écarts</p>
@@ -203,73 +180,52 @@
                         <a href="../../assets/docs/projetCaf47.pdf">En savoir plus sur le projet</a>
                     </div>
                 </div>
-            <div class="bloc">
-                <p class="phrase">
-                    <span class="etoile">★</span><span class="etoile">★</span><span class="etoile-grise">✩</span><span
-                        class="etoile-grise">✩</span><br><br> Gérer le patrimoine informatique
-                </p>
-                <br>
-                <p class="phrase">
-                    <span class="etoile">★</span><span class="etoile-grise">✩</span><span class="etoile-grise">✩</span><br><br> Répondre aux
-                    incidents et aux demandes d'assistance et d'évolution <br>
-                </p>
-                <br>
-                <p class="phrase">
-                    <span class="etoile">★</span><span class="etoile-grise">✩</span><span class="etoile-grise">✩</span><br><br> Développer
-                    la présence en ligne de l'organisation
-                </p>
-                <br>
-                <p class="phrase">
-                    <span class="etoile">★</span><span class="etoile">★</span><span class="etoile">★</span><span
-                        class="etoile-grise">✩</span><br><br> Travailler en mode projet
-                </p>
-                <br>
-                <p class="phrase">
-                    <span class="etoile">★</span><span class="etoile">★</span><span class="etoile-grise">✩</span><br><br> Mettre à
-                    disposition des utilisateurs un service informatique
-                </p>
             </div>
-<section class="section">
-    <div class="container">
-        <div class="competence">
-            <img class="" src="../../assets/images/ava.png" width="700" height="300">
-             <div class="text">
-            <p>Compétences acquises dans le cadre de mon travail à la CAF et faisant partie de « Gérer le patrimoine informatique »</p>
-                <p>Mettre en place et vérifier les niveaux d’habilitation associés à un service</p>
-                <p>Vérifier les conditions de la continuité d’un service informatique</p>
-                <p>Gérer des sauvegardes</p>
-                <p>Vérifier le respect des règles d’utilisation des ressources numériques</p>
-                <a href="../../assets/docs/doccomp1.pdf">En savoir plus ...</a>
-             </div>
-            </div>
-        </div>
-</section>
+        </section>
 
-<section class="section">
-    <div class="container">
-        <div class="competence">
-            <img class="" src="../../assets/images/gacicisco.png" width="700" height="300">
-             <div class="text">
-                <p>Compétence acquise dans le cadre de mon travail à la CAF et faisant partie de «Répondre aux incidents et aux demandes d’assistance et d’évolution»</p>
-                <p>Collecter, suivre et orienter des demandes</p>
-                <p>Traiter des demandes concernant les applications</p>
-            <a href="../../assets/docs/doccomp2.pdf">En savoir plus ...</a>
-        </div>
-    </div>
-</div>
-</section>
         <section class="section">
-    <div class="container">
-        <div class="competence">
-            <img class="" src="../../assets/images/" width="700" height="300">
-             <div class="text">
-                <p>...</p>
-                <p>...</p>
-
+            <div class="container">
+                <div class="competence">
+                    <img class="" src="../../assets/images/ava.png" width="700" height="300">
+                    <div class="text">
+                        <p>Compétences acquises dans le cadre de mon travail à la CAF et faisant partie de « Gérer le
+                            patrimoine informatique »</p>
+                        <p>Mettre en place et vérifier les niveaux d’habilitation associés à un service</p>
+                        <p>Vérifier les conditions de la continuité d’un service informatique</p>
+                        <p>Gérer des sauvegardes</p>
+                        <p>Vérifier le respect des règles d’utilisation des ressources numériques</p>
+                        <a href="../../assets/docs/doccomp1.pdf">En savoir plus ...</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="competence">
+                    <img class="" src="../../assets/images/gacicisco.png" width="700" height="300">
+                    <div class="text">
+                        <p>Compétence acquise dans le cadre de mon travail à la CAF et faisant partie de «Répondre aux
+                            incidents et aux demandes d’assistance et d’évolution»</p>
+                        <p>Collecter, suivre et orienter des demandes</p>
+                        <p>Traiter des demandes concernant les applications</p>
+                        <a href="../../assets/docs/doccomp2.pdf">En savoir plus ...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="competence">
+                    <img class="" src="../../assets/images/" width="700" height="300">
+                    <div class="text">
+                        <!-- Ajoutez votre contenu ici -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section">
             <div class="container">
                 <div class="competence">
