@@ -91,36 +91,31 @@
             align-items: center;
         }
 
-        .competence,
-        .bloc {
-            width: 100%;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            display: flex; /* Ajout */
-            flex-direction: row; /* Ajout */
-        }
+      /* CSS modifié pour ajuster les images et les textes */
+.competence,
+.bloc {
+    display: flex;
+    flex-direction: row-reverse; /* Inverser l'ordre des éléments */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
 
-        .competence {
-            background-color: #f5f5f5;
-        }
+.image {
+    width: 40%;
+    max-height: 200px; /* Hauteur maximale des images */
+    border-radius: 8px;
+    margin-left: 20px; /* Espacement entre l'image et le texte */
+}
 
-        .bloc {
-            background-color: #b3ddf6;
-        }
+.text {
+    width: calc(60% - 20px); /* Ajuster la largeur du texte */
+    padding: 0 20px;
+}
 
-        .image {
-            width: 40%;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            margin-right: 20px; /* Ajout */
-        }
-
-        .text {
-            width: 60%; /* Modification */
-            padding: 0 20px;
-        }
 
         .phrase {
             font-size: 10px; /* ajustez la taille selon vos besoins */
@@ -253,11 +248,7 @@
                 <p>Mettre en œuvre des outils et stratégies de veille informationnelle</p>
             </div>
         </div>
-        <div class="bloc">
-            <p class="phrase"><span class="etoile">★</span><span class="etoile">★</span><span class="etoile-grise">✩</span><span
-                    class="etoile-grise">✩</span>Organiser son développement professionnel</p>
-        </div>
-    </div>
+
 </section>
 </main>
 </body>
